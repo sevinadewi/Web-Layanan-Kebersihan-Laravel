@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.detail_title {
+   
+    text-align: center;
+}
+
+.detail_desc {
+    display: flex; /* Mengaktifkan flexbox */
+    align-items: stretch; 
+    gap: 20px; /* Memberikan jarak antara elemen gambar dan teks */
+    
+    margin: 50px;
+    padding: 20px; /* Opsional: menambahkan padding untuk estetika */
+}
+
+.detail_desc_img {
+    flex: 1; /* Membagi ruang sama besar */
+}
+
+.detail_desc_img img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto; /* Menjaga proporsi gambar */
+    border-radius: 10px; /* Opsional: menambahkan efek rounding pada gambar */
+}
+
+.detail_desc_text {
+    
+    
+    
+    flex: 1; /* Membuat teks menyesuaikan ruang yang tersedia */
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Warna teks */
+    margin: 20px;
+}
+
+.detail_desc_text article {
+     margin-bottom : 20px;
+    
+}
+.detail_desc_text ul {
+    list-style-type: none; /* Hapus bullet default */
+    /* padding-left: 40px; Ruang untuk bullet */
+    margin: 0; /* Hilangkan margin default */
+    padding-right: 20px;
+}
+
+.detail_desc_text li {
+    position: relative; /* Untuk pseudo-elemen */
+    padding-left: 20px; /* Ruang untuk teks sejajar */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+.detail_desc_text li::before {
+    content: '🫧'; /* Ganti dengan bullet yang diinginkan */
+    position: absolute;
+    left: 0; /* Tempatkan bullet di kiri */
+    top: 0; /* Selaraskan bullet dengan teks */
+    font-size: 16px; /* Ukuran bullet */
+    color: black; /* Warna bullet */
+    margin-right: 10px;
+  
+}
+
+
+.detail_desc_text button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+
+.detail_desc_text button:hover {
+    background-color: #0069d9;
+}
