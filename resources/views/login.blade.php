@@ -93,15 +93,7 @@
                 <button>Sign in</button>
             </form>
         </div>
-                {{-- @if(session('error'))
-            <script>
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Login Gagal',
-                    text: '{{ session('error') }}',
-                });
-            </script>
-            @endif --}}
+             
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
@@ -123,23 +115,7 @@
         function validateSignIn() {
             const email = document.getElementById('login_email').value;
             const password = document.getElementById('login_password').value;
-            //  if (!email && !password) {
-            //     alert("Email and Password must be filled out.");
-            //     return false;
-            // }
-            // if (!email) {
-            //     alert("Email must be filled out.");
-            //     return false;
-            // }
-            // if (!password) {
-            //     alert("Password must be filled out.");
-            //     return false;
-            // }
-            
-
-       
-
-        // Validasi email secara manual
+           
         
             if (!email && !password) {
                 Swal.fire({
@@ -183,22 +159,7 @@
             const email = document.getElementById('register_email').value;
             const password = document.getElementById('register_password').value;
 
-            // if (!name && !email && !password) {
-            //     alert("Name, Email, and Password must be filled out.");
-            //     return false;
-            // }
-            // if (!name) {
-            //     alert("Name must be filled out.");
-            //     return false;
-            // }
-            // if (!email) {
-            //     alert("Email must be filled out.");
-            //     return false;
-            // }
-            // if (!password) {
-            //     alert("Password must be filled out.");
-            //     return false;
-            // }
+      
             if (!name && !email && !password) {
                 Swal.fire({
                     icon: 'error',
