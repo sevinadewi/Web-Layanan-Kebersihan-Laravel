@@ -390,8 +390,8 @@
             <h4>Company</h4>
             <a href="">About Us</a>
             <a href="">Blog</a>
-            <a href="">All Products</a>
-            <a href="">Locations Map</a>
+            {{-- <a href="">All Products</a>
+            <a href="">Locations Map</a> --}}
           </div>
           <div>
             <h4>Services</h4>
