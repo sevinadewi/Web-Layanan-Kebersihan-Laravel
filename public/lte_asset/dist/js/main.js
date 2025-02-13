@@ -1,0 +1,1 @@
+NiceSelect.bind(document.getElementById("#a-select"));

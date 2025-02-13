@@ -38,3 +38,10 @@ Route::post('/order', [OrderController::class, 'order'])->name('order.post');
 
 Route::get('/general', [DetailController::class, 'generalCleaning'])->name('generalCleaning.get');
 
+// Route::middleware(['auth', 'role:admin'])->group(function () {
+
+// });
+
+Route::get('/admin', function () {
+    return view('admin.dashboard');
+});
