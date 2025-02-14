@@ -65,7 +65,7 @@ class AdminController extends Controller
         $validator = Validator::make($request->all(), [
             'name'=> 'required|string',
             'description_text'=> 'required|string',
-            'description_poin' => json_encode($request->description_poin),
+            'description_poin' => 'required|array',
             'price' => 'required|integer',
         ]);
         if ($validator->fails()) {
@@ -74,7 +74,7 @@ class AdminController extends Controller
         }
         $check = Services::where('name',$request->name)->where('id','!=',$id_service)->first();
         if ($check) {
-            return Services::back()->with('alert','Layanan sudah digunakan');
+            return Redirect::back()->with('alert','Layanan sudah digunakan');
         }
         $data = [
             'name' => $request->name,
