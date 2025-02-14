@@ -9,9 +9,9 @@
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                {{-- <h3>{{ $jumlah_barang }}</h3> --}}
+                <h3>{{ $jumlah_layanan }}</h3>
 
-                <p>Jumlah Barang</p>
+                <p>Jumlah Layanan</p>
               </div>
               <div class="icon">
                 <i class="ion ion-bag"></i>
