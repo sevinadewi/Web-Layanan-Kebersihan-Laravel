@@ -42,6 +42,12 @@ Route::get('/general', [DetailController::class, 'generalCleaning'])->name('gene
 
 // });
 
-Route::get('/admin', function () {
-    return view('admin.dashboard');
-});
+// Route::get('/admin', function () {
+//     return view('admin.dashboard');
+// });
+
+Route::get('admin-dashboard', '\App\Http\Controllers\Admin\AdminController@index')->name('admin-dashboard');
+Route::get('admin-services', [AdminController::class, 'services'])->name('admin-services');
+Route::get('/admin-services/{id_service}', [AdminController::class, 'deleteServices']);
+    Route::post('/admin-services', [AdminController::class, 'createServices']);
+    Route::put('/admin-services/{id_service}', [AdminController::class, 'editServices']);
