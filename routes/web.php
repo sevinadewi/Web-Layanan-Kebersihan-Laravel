@@ -5,6 +5,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DetailController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\ServiceDetailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +38,7 @@ Route::post('/signin', [LoginController::class, 'authenticate'])->name('signIn.p
 Route::post('/order', [OrderController::class, 'order'])->name('order.post');
 
 Route::get('/general', [DetailController::class, 'generalCleaning'])->name('generalCleaning.get');
-
+Route::get('/service-detail/{id}', [ServiceDetailController::class, 'serviceDetail'])->name('detail');
 // Route::middleware(['auth', 'role:admin'])->group(function () {
 
 // });
