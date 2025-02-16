@@ -38,7 +38,7 @@ Route::post('/signin', [LoginController::class, 'authenticate'])->name('signIn.p
 Route::post('/order', [OrderController::class, 'order'])->name('order.post');
 
 Route::get('/general', [DetailController::class, 'generalCleaning'])->name('generalCleaning.get');
-Route::get('/service-detail/{id}', [ServiceDetailController::class, 'serviceDetail'])->name('detail');
+Route::get('/service-detail/{name}', [ServiceDetailController::class, 'serviceByName']); //{category} akan diisi dengan nilai yang diketik oleh pengguna di URL.
 // Route::middleware(['auth', 'role:admin'])->group(function () {
 
 // });

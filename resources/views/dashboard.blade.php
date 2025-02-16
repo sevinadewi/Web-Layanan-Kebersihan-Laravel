@@ -149,7 +149,7 @@
         <div class="col">
           <div class="card clickable">
             <img src="./images/meat-icon.svg" alt="" />
-            <a href="{{ route('generalCleaning.get') }}">
+            <a href="{{ url('/service-detail/general-cleaning') }}">
             <h3>
               General <br />
               cleaning <br />
