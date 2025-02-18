@@ -61,13 +61,7 @@
             <input type="hidden" id="latitude" name="latitude">
             <input type="hidden" id="longitude" name="longitude">
 
-            {{-- <select id="region" name="region" required>
-                <option value="" disabled selected>Select your region</option>
-                <option value="north">North</option>
-                <option value="south">South</option>
-                <option value="east">East</option>
-                <option value="west">West</option>
-            </select> --}}
+            
 
             <label for="handphone">Handphone Number:</label>
             <input type="tel" id="handphone" name="handphone" required placeholder="1234567890">
@@ -97,3 +91,12 @@
     <script src="{{asset('assets/js/order.js')}}"></script>
 </body>
 </html>
+
+
+{{-- <select id="region" name="region" required>
+                <option value="" disabled selected>Select your region</option>
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select> --}}
